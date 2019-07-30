@@ -1,1 +1,39 @@
 /* styles for website */
+
+/* 
+.container {
+    width: 960px;
+    border: solid black;
+    display: inline-block;
+}
+/*  */
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBR7CLXVx33JcQrD_0EuxQJ93gJYokmKF0VilN0TWsJ3M5CjetA);
+    font-family: sans-serif;
+    /* font-weight: bold; */
+    font-size: 16px;
+}
+
+p {
+    /* color: white; */
+}
+
+.main-img-center {
+    margin: 100px auto;
+}
+
+.img-center {
+    margin-left: 100px;
+}
+
+.image-size {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.margin-center {
+    margin: 0 auto;
+    border: dotted darkgray;
+}
