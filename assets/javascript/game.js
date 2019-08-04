@@ -44,7 +44,7 @@ var guessesLeft = 10;
 var rightGuessCounter = 0;
 
 // create an array of images
-var imageArray = [""]
+// var imageArray = ["_assets/images/zelda.png", ]
 
 //FUNCTIONS
 //----------------------------------------
@@ -104,16 +104,16 @@ function startGame()
 	//Populate blanks
 	for(var i = 0; i< numBlanks; i++)
 	{
-		blanksAndSuccesses.push('_');
-		document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses;
+		blanksAndSuccesses.push("_");
+		document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses;
 	}
 
 	//Changes HTML 
-	document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses.join(' ');
-	document.getElementById('numGuesses').innerHTML = guessesLeft;
-	document.getElementById('winCounter').innerHTML = winCount;
-	document.getElementById('lossCounter').innerHTML = loseCount;
-	document.getElementById('wrongGuesses').innerHTML = wrongLetters;
+	document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(" ");
+	document.getElementById("numGuesses").innerHTML = guessesLeft;
+	document.getElementById("winCounter").innerHTML = winCount;
+	document.getElementById("lossCounter").innerHTML = loseCount;
+	document.getElementById("wrongGuesses").innerHTML = wrongLetters;
 	// Testing
 	console.log(choosenWord);
 	console.log(lettersInWord);
@@ -123,7 +123,7 @@ function startGame()
 
 function compareLetters(userKey)
 {
-				console.log('WORKING!');
+				console.log("WORKING");
 				//If user key exist in choosen word then perform this function 
 				if(choosenWord.indexOf(userKey) > -1)
 				{
@@ -135,7 +135,7 @@ function compareLetters(userKey)
 						{
 							rightGuessCounter++;
 							blanksAndSuccesses[i] = userKey;
-							document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses.join(' ');
+							document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(' ');
 						}	
 					}
 					//Test / Debug
@@ -147,11 +147,11 @@ function compareLetters(userKey)
 					wrongLetters.push(userKey);
 					guessesLeft--;
 					//Changes HTML
-					document.getElementById('numGuesses').innerHTML = guessesLeft;
-					document.getElementById('wrongGuesses').innerHTML = wrongLetters;
+					document.getElementById("numGuesses").innerHTML = guessesLeft;
+					document.getElementById("wrongGuesses").innerHTML = wrongLetters;
 					//Test
-					console.log('Wrong Letters = ' + wrongLetters);
-					console.log('Guesses left are ' + guessesLeft);
+					console.log("Wrong Letters = " + wrongLetters);
+					console.log("Guesses left are " + guessesLeft);
 				}
 			
 			
@@ -163,27 +163,27 @@ function winLose()
 	if(rightGuessCounter === numBlanks)
 	{
 		winCount++;
-		document.getElementById('winCounter').innerHTML = winCount;
+		document.getElementById("winCounter").innerHTML = winCount;
 		reset();
 	}
 	// When number of Guesses reaches 0 then You lose
 	else if(guessesLeft === 0)
 	{
 		loseCount++;
-		document.getElementById('lossCounter').innerHTML = loseCount;
+		document.getElementById("lossCounter").innerHTML = loseCount;
 		reset();
   }
   
   
   // create a function to add images after win
-  function WinImage();{
-    var img = document.getElementById("imgGenerator");
-    for
+  // function WinImage();{
+  //   var img = document.getElementById("imgGenerator");
+  //   for
 
-    
+
 
   }
-}
+
 
 //MAIN PROCCESS
 //--------------------------------------------------------------------------
@@ -199,8 +199,8 @@ document.onkeyup = function(event)
 		{
 			var spliceDword = doubleWord.splice(i,1);
 			//Test
-			console.log('Double word is = ' + doubleWord[i])
-			console.log('Spliced Word is = ' + spliceDword);
+			console.log("Double word is = " + doubleWord[i])
+			console.log("Spliced Word is = " + spliceDword);
 
 			compareLetters(letterGuessed);
 			winLose();
