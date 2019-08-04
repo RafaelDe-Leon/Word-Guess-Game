@@ -20,6 +20,11 @@ p {
     /* color: white; */
 }
 
+.mid-container-color {
+    background-color: #ced9ee;
+    padding: 15px;
+    
+}
 .main-img-center {
     margin: 100px auto;
 }
@@ -36,7 +41,7 @@ p {
 
 .margin-center {
     margin: 0 auto;
-    border: dotted darkgray;
+    border: dotted black;
 }
 
 .left-side {
@@ -45,7 +50,7 @@ p {
 }
 
 .right-side {
-    border-left: dotted darkgray;
+    border-left: dotted black;
 }
 
 /* rows for right side spacing */
@@ -55,7 +60,7 @@ p {
 
 .left-side-row2 {
     margin: 50px auto;
-    border-top: dotted darkgrey;
+    border-top: dotted black;
 }
 .leftside-paragraph {
     margin-top: 100px;
