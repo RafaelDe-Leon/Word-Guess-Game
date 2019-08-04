@@ -10,7 +10,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/javascript/game.js"></script>
 
     <title>Word Game Guesss</title>
 </head>
@@ -21,56 +20,64 @@
         <div class="row main-img-center">
             <img src="assets/images/nintendogame.png" alt="logo of nintendo" class="image-size">
         </div>
+
+
         <!-- image of current word column -->
         <div class="container">
             <div class="row margin-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 left-side">
                     <img src="https://placeimg.com/400/300/tech" alt="image of word" class="img-center">
-
+                    <div class="row">
+                        <div class="col-lg-12 left-side-row2">
+                            <p id="leftside-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                                fuga soluta amet quia voluptatibus totam recusandae nam at dolore possimus perspiciatis
+                                adipisci, aliquam quisquam temporibus autem cupiditate, culpa alias? Inventore. </p>
+                        </div>
+                    </div>
                 </div>
                 <!-- Game side column -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 right-side">
                     <!-- getting started row -->
-                    <div class="row">
-                        <p>
+                    <div class="row right-side-space">
+                        <h2 id="start">
                             Press any key to get started!
-                        </p>
+                        </h2>
                     </div>
                     <!-- wins row -->
-                    <div class="row">
-                        <p>
-                            Wins
-                        </p>
+                    <div class="row right-side-space">
+                        <h5 id="wins">
+                            Wins:
+                        </h5>
                     </div>
-                    <!-- current word row -->
-                    <div class="row">
-                        <p>
-                            Current Word
-                        </p>
+                    <!-- current word picked to be guessed row -->
+                    <div class="row right-side-space">
+                        <h5 id="currentWord">
+                            Current Word: <br><br><br>
+                        </h5>
                     </div>
-                    <!-- guesses remaining  -->
-                    <div class="row">
-                        <p>
-                            Numbers of Guesses Remaining
-                        </p>
+                    <!-- Shows how many guesses are remaining  -->
+                    <div class="row right-side-space">
+                        <h5>
+                            Attempts Remaining:
+                        </h5>
                     </div>
                     <!-- number of guesses remaining -->
-                    <div class="row">
-                        <p>
-                            #
-                        </p>
+                    <div class="row right-side-space">
+                        <h5>
+                            
+                        </h5>
                     </div>
-                    <!-- guessed word -->
-                    <div class="row">
+                    <!-- How many letters are remaining -->
+                    <!-- <div class="row right-side-space">
                         <p>
-                            none
+                            Numbers of letters remaining
                         </p>
-                    </div>
+                    </div> -->
                     <!-- letters already guessed -->
-                    <div class="row">
-                        <p>
-                            none
-                        </p>
+                    <div class="row right-side-space">
+                        <h5>
+                            Letters Guessed:
+                        </h5>
                     </div>
 
                 </div>
@@ -87,6 +94,7 @@
 
 
 
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 

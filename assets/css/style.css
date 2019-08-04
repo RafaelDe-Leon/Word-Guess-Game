@@ -9,7 +9,8 @@
 /*  */
 
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBR7CLXVx33JcQrD_0EuxQJ93gJYokmKF0VilN0TWsJ3M5CjetA);
+    background-image: url(../images/nintendotest.png);
+    background-repeat: round;
     font-family: sans-serif;
     /* font-weight: bold; */
     font-size: 16px;
@@ -24,7 +25,7 @@ p {
 }
 
 .img-center {
-    margin-left: 100px;
+    margin-left: 10%;
 }
 
 .image-size {
@@ -36,4 +37,26 @@ p {
 .margin-center {
     margin: 0 auto;
     border: dotted darkgray;
+}
+
+.left-side {
+    margin: 100px 0px;
+    /* border-bottom: dotted darkgrey; */
+}
+
+.right-side {
+    border-left: dotted darkgray;
+}
+
+/* rows for right side spacing */
+.right-side-space {
+    padding: 2em;
+}
+
+.left-side-row2 {
+    margin: 50px auto;
+    border-top: dotted darkgrey;
+}
+.leftside-paragraph {
+    margin-top: 100px;
 }
