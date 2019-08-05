@@ -44,7 +44,11 @@ var guessesLeft = 10;
 var rightGuessCounter = 0;
 
 // create an array of images
-// var imageArray = ["_assets/images/zelda.png", ]
+// var imageArray = ["../images/zelda.png", "../images/link.png", "../images/mario.png",  
+// "../images/starfox.png", "../images/donkeykong.png", "../images/pikmin.png", "../images/captainfalcon.png", 
+// "../images/pikachu.png", "../images/ness.png", "../images/marth.png", 
+// "../images/luigi.png", "../images/ganondorf.png", "../images/yoshi.png", "../images/kidicarus.png", 
+// "../images/kirby.png", "../images/megaman.png", "../images/fireemblem.png"];
 
 //FUNCTIONS
 //----------------------------------------
@@ -176,13 +180,15 @@ function winLose()
   
   
   // create a function to add images after win
-  // function WinImage();{
-  //   var img = document.getElementById("imgGenerator");
-  //   for
+//   function showImage() {
+//     var img = document.getElementById("imgGenerator");
+//     img.src = imageArray; 
+// showImage();
 
 
+}
 
-  }
+
 
 
 //MAIN PROCCESS
@@ -206,5 +212,4 @@ document.onkeyup = function(event)
 			winLose();
 		}
 	}		
-		
 }
